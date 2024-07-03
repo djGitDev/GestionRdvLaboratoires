@@ -4,8 +4,5 @@ stages:
 build-java-project:
   stage: build
   image: openjdk:20-jdk
-  before_script:
-    - apt-get update
-    - apt-get install -y maven
   script:
     - mvn package
