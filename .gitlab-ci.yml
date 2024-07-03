@@ -5,6 +5,5 @@ build-java-project:
   stage: build
   image: openjdk:20-jdk
   script:
-    - apk update
-    - apk add maven
+    - apt install maven -y
     - mvn package
