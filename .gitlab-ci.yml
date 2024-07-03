@@ -1,7 +1,8 @@
+image: registry.gitlab.com/alteernative/openjdk20-maven:latest
 stages:
   - build
 
-build-java-project:
+build_job:
   stage: build
   script:
-    mvn package
+    - mvn package
