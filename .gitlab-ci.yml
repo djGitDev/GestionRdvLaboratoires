@@ -3,6 +3,6 @@ stages:
 
 build-java-project:
   stage: build
-  image: openjdk:20-jdk
+  image: maven:3.8.1-openjdk-20
   script:
     - mvn package
