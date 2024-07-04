@@ -1,14 +1,9 @@
-# Start from the latest Ubuntu image
-FROM ubuntu:latest
+FROM ubuntu:20.04
+ENV DEBIAN_FRONTEND=noninteractive
 
-# Set the label
-LABEL authors="Alter"
+RUN apt-get update -y && \
+    apt-get install -y software-properties-common && \
+    add-apt-repository ppa:deadsnakes/ppa && \
+    apt-get update -y
 
-# Install dependencies
-RUN apt-get update && apt-get install -y \
-    openjdk-17-jdk \
-    maven \
-    && apt-get clean
-
-# Set the default command to run when the container starts
-ENTRYPOINT ["top", "-b"]
+RUN apt-get install -y build-essential git valgrind cmake graphviz gnuplot
