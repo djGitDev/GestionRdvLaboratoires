@@ -1,4 +1,4 @@
-image: registry.gitlab.info.uqam.ca/jdaini.mohammed_ali/pracc-inf-5153-tp-2:latest
+image: registry.gitlab.info.uqam.ca/jdaini.mohammed_ali/inf-5153-tp-2:latest
 
 stages:
   - build
