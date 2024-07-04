@@ -17,5 +17,3 @@ RUN wget https://archive.apache.org/dist/maven/maven-3/3.8.1/binaries/apache-mav
 ENV MAVEN_HOME=/opt/apache-maven-3.8.1
 ENV PATH=$MAVEN_HOME/bin:$PATH
 
-# Verify installations
-RUN java -version && mvn -version
