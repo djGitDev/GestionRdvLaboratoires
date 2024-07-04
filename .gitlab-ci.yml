@@ -1,8 +1,11 @@
-image: registry.gitlab.com/alteernative/openjdk20-maven:latest
+image: registry.gitlab.info.uqam.ca/jdaini.mohammed_ali/pracc-inf-5153-tp-2:latest
+
 stages:
   - build
 
-build_job:
+
+build:
   stage: build
   script:
     - mvn package
+
