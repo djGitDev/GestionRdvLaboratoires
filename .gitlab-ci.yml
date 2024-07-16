@@ -3,9 +3,10 @@ image: registry.gitlab.info.uqam.ca/jdaini.mohammed_ali/inf5153-tp2:latest
 stages:
   - build
 
-
 build:
   stage: build
   script:
-    - mvn package
+    - mvn compile
+
+
 
